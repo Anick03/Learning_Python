@@ -29,5 +29,5 @@ while True:
         print("Too high! Try again.")
         print(f"Attempts left: {10 - attempts}")
     else:
-        print(f"Correct! You guessed it in {attempts} attempts.")
+        print(f"Correct! The number is {secret_number}. You guessed it in {attempts} attempts.")
         break
