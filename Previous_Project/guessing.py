@@ -18,12 +18,16 @@ while True:
         break
     elif guess < secret_number:
         print("It's low! Try again.")
+        print(f"Attempts left: {10 - attempts}")
     elif guess + 10 < secret_number:
         print("Too low! Try again.")
+        print(f"Attempts left: {10 - attempts}")
     elif guess > secret_number:
         print("It's high! Try again.")
+        print(f"Attempts left: {10 - attempts}")
     elif guess - 10 > secret_number:
         print("Too high! Try again.")
+        print(f"Attempts left: {10 - attempts}")
     else:
         print(f"Correct! You guessed it in {attempts} attempts.")
         break
