@@ -25,7 +25,7 @@ while access_granted == True:
     print("4. Exit")
 
     #Choosing Section
-    choice = input("Enter your choice (1-4): ")
+    choice = input("\nEnter your choice (1-4): ")
     if choice == "1":
         print(f"Current Balance: Rs.{balance}")
     elif choice == "2":
@@ -39,9 +39,9 @@ while access_granted == True:
     elif choice == "3":
         amount = float(input("Enter the amount to withdraw: Rs."))
         if amount <= 0:
-            print("Invalid amount.")
+            print("\nInvalid amount.")
         elif amount > balance:
-            print("Insufficient Balance!")
+            print("\nInsufficient Balance!")
         else:
             balance -= amount
             print("Withdrawal Successful!")
