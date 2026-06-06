@@ -32,7 +32,7 @@ while access_granted == True:
         amount = float(input("Enter the amount to deposit: Rs."))
         if amount > 0:
             balance += amount
-            print(f"Deposit Successful!")
+            print(f"Deposit Successful!") 
             print(f"New Balance: Rs. {balance}")
         else:
             print("Invalid amount!")
