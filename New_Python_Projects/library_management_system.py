@@ -1,9 +1,9 @@
 import time
 
-#Initializing an empty dictionary to store book inventory
+#Initializing an empty dictionary to store the book inventory
 library = {}
 
-# Defining functions for library management system
+# Using def function for library management system
 def add_book():
     book = input("Enter the book name: ")
     quantity = int(input("Enter quantity: "))
@@ -43,7 +43,7 @@ def return_book():
 while True:
     print("===== Library Management System ======")
     print("1. Add Book")
-    print("2. View Books")
+    print("2. View Books") 
     print("3. Borrow Book")
     print("4. Return Book")
     print("5. Exit")
@@ -65,6 +65,6 @@ while True:
         break
     else:
         print("Invalid choice. Please try again.\n")
-        
+
     #Adding two seconds delay for better user experience
     time.sleep(2)  
